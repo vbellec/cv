@@ -1,11 +1,31 @@
 window.onload = function () {
-    var objpSkill = document.getElementById('p-skill');
-    var svgSkill = document.getElementById('skill-svg');
+    var skillSvg =  document.getElementById('object-skill').contentDocument.getElementById('skill-svg');
 
-    svgSkill.onload = function () {
-        let php = document.getElementById('skill-svg-php');
-        alert("Hello svg !");
+    var skillPhp = skillSvg.getElementById('skill-svg-php');
 
-        console.log(php);
+    var txtSkill = document.getElementById('txt-skill');
+
+    function clearTxtSkill () {
+        txtSkill.textContent = "";
     }
+
+    function writeTxtSkill (txt) {
+        clearTxtSkill();
+
+        if (Array.isArray(txt) === true) {
+            txt.forEach(function(element) {
+                textContent += element;
+            }, this);
+        } else {
+            txtSkill.textContent = txt;
+        }
+    }
+
+    skillPhp.addEventListener('mouseover', function (evt) {
+        var title = 'PHP';
+        var txt = "Cours de PHP dans mon BTS."
+
+        writeTxtSkill(txt);
+    });
+
 }
