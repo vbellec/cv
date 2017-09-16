@@ -1,9 +1,10 @@
 # CV
 
 ## TODO
- - [ ] Arrondir les bords de la photo
+ - [ ] Rapetisser image profil
  - [ ] Réfléchir à comment afficher la liste des compétences
     - [ ] Annimation svg
     - [ ] Rajout texte d'explication logo (svg)
- - [ ] Rajouter les logos des sites
+ - [ ] Rajouter les logos des réseaux sociaux
  - [ ] Réfléchir à où placer la div de "Centre d'intérêt"
+ - [ ] Fallback image vectoriel
