@@ -1,31 +1,29 @@
 window.onload = function () {
     var skillSvg =  document.getElementById('object-skill').contentDocument.getElementById('skill-svg');
+    var skillSvgs = skillSvg.querySelectorAll('.skill-svg');
 
-    var skillPhp = skillSvg.getElementById('skill-svg-php');
+    var defaultSkillDiv = document.getElementById('default-skill-div');
+    var skillDiv = document.getElementById('skill-div');
 
-    var txtSkill = document.getElementById('txt-skill');
+    function loadSkill(title) {
+        var xhttp = new XMLHttpRequest();
 
-    function clearTxtSkill () {
-        txtSkill.textContent = "";
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                skillDiv.innerHTML = this.responseText;
+                defaultSkillDiv.style = "display: none";
+            }
+        };
+
+        xhttp.open('GET', "html/skill/" + title + '.html');
+        xhttp.send();
     }
 
-    function writeTxtSkill (txt) {
-        clearTxtSkill();
-
-        if (Array.isArray(txt) === true) {
-            txt.forEach(function(element) {
-                textContent += element;
-            }, this);
-        } else {
-            txtSkill.textContent = txt;
+    for (let i = 0; i < skillSvgs.length; i++) {
+        skillSvgs[i].onmouseover = function (evt) {
+            let id = this.id.split('-');
+            loadSkill(id[id.length - 1]);
         }
     }
-
-    skillPhp.addEventListener('mouseover', function (evt) {
-        var title = 'PHP';
-        var txt = "Cours de PHP dans mon BTS."
-
-        writeTxtSkill(txt);
-    });
 
 }

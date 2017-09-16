@@ -16,7 +16,7 @@
    id="skill-svg"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="dessin.svg">
+   sodipodi:docname="skill.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -318,16 +318,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4292387"
-     inkscape:cx="155.35742"
-     inkscape:cy="748.58502"
+     inkscape:zoom="1.0106244"
+     inkscape:cx="107.53362"
+     inkscape:cy="706.8101"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-grids="true"
      inkscape:snap-intersection-paths="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1680"
+     inkscape:window-height="1001"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
@@ -357,11 +357,6 @@
        style="fill:#8665b3;fill-opacity:1"
        d="m 416.04483,526.905 -28.03037,-28.9108 0,-27.90417 0,-27.90416 27.90122,-28.7757 27.90119,-28.7757 27.05527,0 27.05529,0 28.16045,29.04494 28.16045,29.04493 0,27.63587 0,27.63585 -28.03128,28.90987 -28.03128,28.90985 -27.05529,0 -27.05527,0 -28.03038,-28.91078 z"
        id="path4515"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#dd1b16;fill-opacity:1"
-       d="m 531.12052,187.85375 -28.37947,-28.8514 0,-28.18395 0,-28.18398 28.38131,-28.84952 28.38133,-28.849527 27.72475,0 27.72475,0 28.37947,28.8514 28.37947,28.851407 0,27.99166 0,27.99166 -28.5668,29.04183 -28.56681,29.04182 -27.53927,0 -27.53925,0 -28.37948,-28.8514 z"
-       id="path5461"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#78cff5;fill-opacity:1"
@@ -425,10 +420,13 @@
       </g>
     </g>
     <g
-       id="g3905"
+       id="skill-svg-js"
        transform="matrix(1.3437828,0,0,1.3437828,152.68186,-257.23678)"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       class="skill-svg">
+      <title
+         id="title3538">JavaScript</title>
       <path
          inkscape:connector-curvature="0"
          id="path3834"
@@ -556,9 +554,10 @@
          style="fill:#2965f1;fill-opacity:1" />
     </g>
     <g
-       id="skill-svg-php">
+       id="skill-svg-php"
+       class="skill-svg">
       <title
-         id="title3545">skill-svg-php</title>
+         id="title3545">PHP</title>
       <path
          onclick=""
          inkscape:export-ydpi="90"
@@ -956,37 +955,45 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.296175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 558.52558,46.428174 -56.48088,56.480866 0,56.48087 56.48088,56.48087 56.48086,0 56.48085,-56.48087 0,-56.48087 -56.48085,-56.480866 z"
-       id="path3617-7-9-7-7-0-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <g
-       id="g48"
-       transform="matrix(0.78020778,0,0,0.78020778,521.30315,68.999067)">
-      <polygon
-         points="13.621,138.311 83.331,176.625 153.4,137.792 166.462,29.46 83.243,0.875 0.554,29.975 "
-         id="polygon50"
-         style="fill:#b3b3b3" />
-      <polygon
-         points="83.05,167.471 146.041,132.609 158.214,35.721 83.05,10.089 "
-         id="polygon52"
-         style="fill:#a6120d" />
-      <polygon
-         points="83.049,167.471 83.049,10.086 9.833,36.183 21.03,133.072 "
-         id="polygon54"
-         style="fill:#dd1b16" />
+       id="g4361">
       <path
          inkscape:connector-curvature="0"
-         d="m 103.74,93.871 -20.69,9.675 -21.807,0 -10.251,25.64 -19.067,0.353 L 83.05,15.804 103.74,93.871 Z M 101.74,89 83.187,52.271 67.969,88.368 l 15.08,0 L 101.74,89 Z"
-         id="path56"
-         style="fill:#f2f2f2" />
-      <polygon
-         points="118.285,129.543 136.529,129.881 83.049,15.804 83.186,52.271 100.454,88.396 83.088,88.396 83.049,103.523 107.062,103.546 "
-         id="polygon58"
-         style="fill:#b3b3b3" />
+         id="path5461"
+         d="m 531.12052,187.85375 -28.37947,-28.8514 0,-28.18395 0,-28.18398 28.38131,-28.84952 28.38133,-28.849527 27.72475,0 27.72475,0 28.37947,28.8514 28.37947,28.851407 0,27.99166 0,27.99166 -28.5668,29.04183 -28.56681,29.04182 -27.53927,0 -27.53925,0 -28.37948,-28.8514 z"
+         style="fill:#dd1b16;fill-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:connector-curvature="0"
+         id="path3617-7-9-7-7-0-6"
+         d="m 558.52558,46.428174 -56.48088,56.480866 0,56.48087 56.48088,56.48087 56.48086,0 56.48085,-56.48087 0,-56.48087 -56.48085,-56.480866 z"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.296175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         transform="matrix(0.78020778,0,0,0.78020778,521.30315,68.999067)"
+         id="g48">
+        <polygon
+           style="fill:#b3b3b3"
+           id="polygon50"
+           points="13.621,138.311 83.331,176.625 153.4,137.792 166.462,29.46 83.243,0.875 0.554,29.975 " />
+        <polygon
+           style="fill:#a6120d"
+           id="polygon52"
+           points="83.05,167.471 146.041,132.609 158.214,35.721 83.05,10.089 " />
+        <polygon
+           style="fill:#dd1b16"
+           id="polygon54"
+           points="83.049,167.471 83.049,10.086 9.833,36.183 21.03,133.072 " />
+        <path
+           style="fill:#f2f2f2"
+           id="path56"
+           d="m 103.74,93.871 -20.69,9.675 -21.807,0 -10.251,25.64 -19.067,0.353 L 83.05,15.804 103.74,93.871 Z M 101.74,89 83.187,52.271 67.969,88.368 l 15.08,0 L 101.74,89 Z"
+           inkscape:connector-curvature="0" />
+        <polygon
+           style="fill:#b3b3b3"
+           id="polygon58"
+           points="118.285,129.543 136.529,129.881 83.049,15.804 83.186,52.271 100.454,88.396 83.088,88.396 83.049,103.523 107.062,103.546 " />
+      </g>
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.296175px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
