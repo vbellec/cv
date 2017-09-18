@@ -55,7 +55,7 @@ window.onload = function () {
             }
         };
 
-        xhttp.open('GET', "ajax-html/skill/" + title + '.html');
+        xhttp.open('GET', "html/skill/" + title + '.html');
         xhttp.send();
     }
 
