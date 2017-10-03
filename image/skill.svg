@@ -487,9 +487,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="-29.22004"
-     inkscape:cy="16.453004"
+     inkscape:zoom="1"
+     inkscape:cx="113.12929"
+     inkscape:cy="273.53057"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -514,8 +514,25 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
@@ -5601,7 +5618,8 @@
     </g>
     <g
        id="skill-svg-mysql"
-       transform="translate(9.4068542,432.4062)">
+       transform="translate(9.4068542,432.4062)"
+       class="skill-svg">
       <title
          id="title14258">MySQL</title>
       <path

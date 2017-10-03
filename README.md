@@ -10,3 +10,4 @@
  - [ ] Réfléchir à où placer la div de "Centre d'intérêt"
  - [x] Fallback image vectoriel
  - [ ] Réfléchir au responsive
+ - [ ] Rajouter au script de chargement html/skill la phrase : "Certains de mes projets développer en &lt;langue de programmation&gt; personnels ou scolaires sont trouvable dans la liste ci-dessous :"
