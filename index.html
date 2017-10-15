@@ -5,27 +5,39 @@
         <title>CV - Loïc Penaud</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+            crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" >
                     <div class="row">
                         <img src="image/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200px">
                     </div>
                     <div class="row">
                         <p>
                             Loïc Penaud
-                            <br>
+                            <br> 
                             19 ans
-                            <br>
-                            <a href="mailto:l.penaud@zaclys.net">l.penaud@zaclys.net</a>
-                            <br>
-                            <a href="https://www.linkedin.com/in/loïc-penaud-296067129">Linkedin</a>
-                            <br>
-                            <a href="https://github.com/lpenaud">GitHub</a>
                         </p>
+                        <div class="list-group" id="div-personal">
+                            <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" style="color: #0051ff">
+                                <i class="fa fa-envelope fa-2x"></i>
+                                <span>l.penaud@zaclys.net</span>
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="https://github.com/lpenaud" style="color: #333333">
+                                <i class="fa fa-github fa-2x"></i>
+                                <span>@lpenaud</span>
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/loïc-penaud-296067129" style="color: #0077B5">
+                                <i class="fa fa-linkedin-square fa-2x"></i>
+                                <span>Loïc Penaud</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -53,10 +65,8 @@
                         <h2>Compétences</h2>
                         <div>
                             <h4>Programmation</h4>
-
-                            <div class="row">
-                                <div class="col">
-                                    <object data="image/skill.svg" type="image/svg+xml" style="width: 480px" id="object-skill">
+                                <div class="text-center">
+                                    <object data="image/skill.svg" type="image/svg+xml" id="object-skill">
                                         <div class="list-group">
                                             <a href="#" class="list-group-item" id="skill-svg-php">PHP</a>
                                             <a href="#" class="list-group-item" id="skill-svg-js">JS</a>
@@ -78,18 +88,6 @@
                                         </div>
                                     </object>
                                 </div>
-
-                                <div class="col">
-                                    <div id="default-skill-div">
-                                        <h4 class="text-center"><strong></strong></h4>
-                                        <p>
-                                            Passer la souris sur l'image pour des explications.
-                                        </p>
-                                    </div>
-                                    <div id="skill-div"></div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                     <div>
@@ -125,6 +123,6 @@
             </div>
         </div>
 
-        <script src="js/skill.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
