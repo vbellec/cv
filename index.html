@@ -12,24 +12,24 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3" >
+                <div id="div-col-left" class="col-md-3 text-center">
                     <div>
-                        <img src="image/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200px">
+                        <img src="images/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200px">
                     </div>
                     <div>
-                        <p>
+                        <p id="p-name">
                             Loïc Penaud
                             <br> 
                             19 ans
                         </p>
-                        <div class="list-group" id="div-personal">
-                            <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" style="color: #0051ff">
+                        <div class="list-group text-left" id="div-personal">
+                            <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank" style="color: #0051ff">
                                 <i class="fa fa-envelope fa-2x"></i>
                                 <span>l.penaud@zaclys.net</span>
                             </a>
-                            <a class="list-group-item list-group-item-action" href="https://github.com/lpenaud" style="color: #333333">
+                            <a class="list-group-item list-group-item-action" href="https://github.com/lpenaud" target="_blank" style="color: #333333">
                                 <i class="fa fa-github fa-2x"></i>
                                 <span>@lpenaud</span>
                             </a>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-9">
+                <div id="div-col-center" class="col-md-9">
                     <div>
                         <h2>Expérience professionnelle</h2>
                         <ul class="list-group">
@@ -63,31 +63,75 @@
                     </div>
                     <div>
                         <h2>Compétences</h2>
-                        <div>
-                            <h4>Programmation</h4>
-                                <div class="text-center">
-                                    <object data="image/skill.svg" type="image/svg+xml" id="object-skill" width="500px">
-                                        <div class="list-group">
-                                            <a href="#" class="list-group-item" id="skill-svg-php">PHP</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-js">JS</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-angularjs">Angularjs</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-html5">HTML5</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-nodejs">Node.js</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-python">Python</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-css3">CSS3</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-jquery">jQuery</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-vbnet">VB.net</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-bootstrap">Bootstrap</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-mysql">MySQL</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-linux">GNU / Linux</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-win">Windows</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-oracle">Oracle Database</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-mongo">MongoDB</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-loopback">LoopBack</a>
-                                            <a href="#" class="list-group-item" id="skill-svg-java">Java</a>
-                                        </div>
-                                    </object>
+                        <h3>Informatiques</h3>
+                        <div class="text-center">
+                            <object data="images/skill.svg" type="image/svg+xml" id="object-skill" width="500px">
+                                <div id="div-svg-fallback">
+                                    <a href="#" id="skill-svg-php">PHP</a>
+                                    <a href="#" id="skill-svg-js">JavaScript</a>
+                                    <a href="#" id="skill-svg-angularjs">Angularjs</a>
+                                    <a href="#" id="skill-svg-html5">HTML5</a>
+                                    <a href="#" id="skill-svg-nodejs">Node.js</a>
+                                    <a href="#" id="skill-svg-python">Python</a>
+                                    <a href="#" id="skill-svg-css3">CSS3</a>
+                                    <a href="#" id="skill-svg-jquery">jQuery</a>
+                                    <a href="#" id="skill-svg-vbnet">VB.net</a>
+                                    <a href="#" id="skill-svg-bootstrap">Bootstrap</a>
+                                    <a href="#" id="skill-svg-mysql">MySQL</a>
+                                    <a href="#" id="skill-svg-linux">GNU / Linux</a>
+                                    <a href="#" id="skill-svg-win">Windows</a>
+                                    <a href="#" id="skill-svg-oracle">Oracle Database</a>
+                                    <a href="#" id="skill-svg-mongo">MongoDB</a>
+                                    <a href="#" id="skill-svg-loopback">LoopBack</a>
+                                    <a href="#" id="skill-svg-java">Java</a>
                                 </div>
+                            </object>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Langues</h3>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_France.svg" alt="Français" title="Français">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_the_United_Kingdom.svg" alt="Anglais" title="Anglais">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_Spain.svg" alt="Espagnol" title="Espagnol">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="div-diverse" class="col-md-6">
+                                <h3>Divers</h3>
+                                <p>
+                                    Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...
+                                </p>
+                                <p>
+                                    Prévention et secours civiques de niveau 1,
+                                    certificat de compétence obtenu en 2013 
+                                    suite à un stage au collège.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div>
