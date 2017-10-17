@@ -5,33 +5,47 @@
         <title>CV - Loïc Penaud</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+            crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <img src="image/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200px">
-                    </div>
-                    <div class="row">
-                        <p>
-                            Loïc Penaud
-                            <br>
-                            19 ans
-                            <br>
-                            <a href="mailto:l.penaud@zaclys.net">l.penaud@zaclys.net</a>
-                            <br>
-                            <a href="https://www.linkedin.com/in/loïc-penaud-296067129">Linkedin</a>
-                            <br>
-                            <a href="https://github.com/lpenaud">GitHub</a>
-                        </p>
+                <div id="div-col-left" class="col-md-3 text-center">
+                    <div>
+                        <div>
+                            <img src="images/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200px">
+                        </div>
+                        <div>
+                            <p id="p-name">
+                                Loïc Penaud
+                                <br> 19 ans
+                            </p>
+                            <div class="list-group text-left" id="div-personal">
+                                <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank" style="color: #0051ff">
+                                    <i class="fa fa-envelope fa-2x"></i>
+                                    <span>l.penaud@zaclys.net</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action" href="https://github.com/lpenaud" target="_blank" style="color: #333333">
+                                    <i class="fa fa-github fa-2x"></i>
+                                    <span>@lpenaud</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/loïc-penaud-296067129" target="_blank"
+                                    style="color: #0077B5">
+                                    <i class="fa fa-linkedin-square fa-2x"></i>
+                                    <span>Loïc Penaud</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-9">
+                <div id="div-col-center" class="col-md-9">
                     <div>
-                        <h2>Expérience professionnelle</h2>
+                        <h2 id="h2-professional-experience">Expérience professionnelle</h2>
                         <ul class="list-group">
                             <li class="list-group-item flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
@@ -51,54 +65,158 @@
                     </div>
                     <div>
                         <h2>Compétences</h2>
-                        <div>
-                            <h4>Programmation</h4>
-
-                            <div class="row">
-                                <div class="col">
-                                    <object data="image/skill.svg" type="image/svg+xml" style="width: 300px" id="object-skill">
-                                        <p>
-                                            Votre navigateur n'est pas compatible avec les images *.svg.
-                                        </p>
-                                    </object>
+                        <h3>Informatiques</h3>
+                        <div class="text-center">
+                            <object data="images/skill.svg" type="image/svg+xml" id="object-skill" width="500px">
+                                <div id="div-svg-fallback">
+                                    <a href="#" id="skill-svg-php">PHP</a>
+                                    <a href="#" id="skill-svg-js">JavaScript</a>
+                                    <a href="#" id="skill-svg-angularjs">Angularjs</a>
+                                    <a href="#" id="skill-svg-html5">HTML5</a>
+                                    <a href="#" id="skill-svg-nodejs">Node.js</a>
+                                    <a href="#" id="skill-svg-python">Python</a>
+                                    <a href="#" id="skill-svg-css3">CSS3</a>
+                                    <a href="#" id="skill-svg-jquery">jQuery</a>
+                                    <a href="#" id="skill-svg-vbnet">VB.net</a>
+                                    <a href="#" id="skill-svg-bootstrap">Bootstrap</a>
+                                    <a href="#" id="skill-svg-mysql">MySQL</a>
+                                    <a href="#" id="skill-svg-linux">GNU / Linux</a>
+                                    <a href="#" id="skill-svg-win">Windows</a>
+                                    <a href="#" id="skill-svg-oracle">Oracle Database</a>
+                                    <a href="#" id="skill-svg-mongo">MongoDB</a>
+                                    <a href="#" id="skill-svg-loopback">LoopBack</a>
+                                    <a href="#" id="skill-svg-java">Java</a>
                                 </div>
-
-                                <div class="col">
-                                    <div id="default-skill-div">
-                                        <h4 class="text-center"><strong></strong></h4>
-                                        <p>
-                                            Passer la souris sur l'image pour des explications.
-                                        </p>
-                                    </div>
-                                    <div id="skill-div"></div>
+                            </object>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Langues</h3>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_France.svg" alt="Français" title="Français">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_the_United_Kingdom.svg" alt="Anglais" title="Anglais">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="div-languages">
+                                    <img src="images/language/Flag_of_Spain.svg" alt="Espagnol" title="Espagnol">
+                                    <span>
+                                        <i class="fa fa-star fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                        <i class="fa fa-star-o fa-2x"></i>
+                                    </span>
                                 </div>
                             </div>
-
+                            <div id="div-diverse" class="col-md-6">
+                                <h3>Divers</h3>
+                                <p>
+                                    Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...
+                                </p>
+                                <p>
+                                    Prévention et secours civiques de niveau 1,
+                                    certificat de compétence obtenu en 2013 
+                                    suite à un stage au collège.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <h2>Formation</h2>
-                        <ul>
-                            <li>
-                                <strong>2016 à aujourd'hui</strong> BTS (Brevet de Technicien Supérieur)
-                                SIO (Services Informatiques aux Organisations), spécialité SLAM (Solutions
-                                Logicielles et Applications Métier) au lycée Charles de Foucault
-                                à Brest.
+                        <ul class="list-group">
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">BTS - SIO</h5>
+                                    <h5><small>2016 - aujourd'hui</small></h5>
+                                </div>
+                                <p class="mb-1">
+                                     BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), 
+                                     spécialité SLAM (Solutions Logicielles
+                                     et Applications Métier) au lycée Charles de Foucault à Brest.
+                                </p>
                             </li>
-                            <li>
-                                <strong>2014 à 2016</strong> Bac STI2D (Sciences et Technologies
-                                de l'Industrie et du Développement Durable), spécialité SIN (Système
-                                d’Information et Numérique) au lycée Vauban à Brest.
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">STI2D</h5>
+                                    <h5><small>2014 - 2016</small></h5>
+                                </div>
+                                <p class="mb-1">
+                                     Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), 
+                                     spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest.
+                                </p>
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div id="div-interest">
                         <h2>Centre d'intérêt</h2>
+                        <ul class="list-group">
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Arts</h5>
+                                </div>
+                                <ul class="mb-1">
+                                    <li>Musique (festival, concerts)</li>
+                                    <li>Cinéma</li>
+                                    <li>Télévision (séries)</li>
+                                    <li>Bande-Dessiné</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Kayak</h5>
+                                </div>
+                                <ul class="mb-1">
+                                    <li>Club de Brest (CKB)</li>
+                                    <li>Compétitions nationales (2013 à 2016)</li>
+                                    <li>Encadrement de jeunes</li>
+                                    <li>Centre Labellisé d'Entraînement (2013-2015)</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Jeux-vidéo</h5>
+                                </div>
+                                <ul class="mb-1">
+                                    <li>Jeu de rôle (RPG)</li>
+                                    <li>Stratégie (RTS, TBS)</li>
+                                    <li>Gestion</li>
+                                    <li>Jeux de tir (FPS, TPS)</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Vidéo</h5>
+                                </div>
+                                <ul class="mb-1">
+                                    <li>Notion de montage</li>
+                                    <li>Élaboration de plusieurs court-métrage en groupe</li>
+                                    <li>
+                                        Nomination pour le festival « Travelling Pocket » organisé par l’association « Clair Obscur » et disponible sur
+                                        <a href="https://www.youtube.com/watch?v=PdAkVcdvGCs" target="_blank">YouTube</a>.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>                      
                 </div>
             </div>
         </div>
 
-        <script src="js/skill.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
