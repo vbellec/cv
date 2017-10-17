@@ -1,6 +1,20 @@
+h3 {
+    margin-top: 0.4rem;
+}
+
+h2 {
+    margin-top: 0.8rem;
+}
+
 .container-fluid {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #div-col-left>div {
+        position: fixed;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -11,6 +25,18 @@
 
     #div-col-center {
         padding-right: 4em;
+    }
+
+    #div-interest li {
+        min-width: 300px;
+    }
+
+    h2 {
+        margin-top: 0.4rem;
+    }
+
+    #h2-professional-experience {
+        margin-top: auto;
     }
 }
 
@@ -26,6 +52,11 @@
 
 #div-personal a:hover span {
     font-weight: bold;
+}
+
+#object-skill {
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 #div-svg-fallback {
@@ -58,4 +89,14 @@
 
 #div-diverse p {
     margin-left: 2em;
+}
+
+#div-interest>ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#div-interest li {
+    border: none;
+    max-width: 600px;    
 }
