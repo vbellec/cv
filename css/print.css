@@ -1,0 +1,7 @@
+.container-fluid {
+    display: none;
+}
+
+#figure-printable {
+    display: block;
+}
