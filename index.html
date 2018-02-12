@@ -10,10 +10,9 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css" media="screen">
-        <link rel="stylesheet" href="css/print.css" media="print">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid d-print-none">
             <div class="row">
                 <div id="div-col-left" class="col-md-3 text-center">
                     <div>
@@ -54,17 +53,32 @@
                         <ul class="list-group">
                             <li class="list-group-item flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Shakabay (Brest)</h5>
+                                    <h5><small>15/01/2018 - 02/03/2018</small></h5>
+                                </div>
+                                <p class="mb-1">
+                                  Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai
+                                  travaillé sur l'API de Shakabay en nodejs avec koa-router.
+                                </p>
+                            </li>
+                            <li class="list-group-item flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Zip (Guipavas)</h5>
                                     <h5><small>03/07/2017 - 18/08/2017</small></h5>
                                 </div>
-                                <p class="mb-1">Développeur back et front-end pour le site AirAffaires.</p>
+                                <p class="mb-1">
+                                  Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2).
+                                  De plus, j'ai contribué au front avec angularjs.
+                                </p>
                             </li>
                             <li class="list-group-item flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
                                     <h5 class="mb-1">Zip (Guipavas)</h5>
                                     <h5><small>29/05/2017 - 23/06/2017</small></h5>
                                 </div>
-                                <p class="mb-1">Stagiaire pour le site AirAffaires</p>
+                                <p class="mb-1">
+                                  Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -91,6 +105,7 @@
                                     <a href="#" id="skill-svg-mongo">MongoDB</a>
                                     <a href="#" id="skill-svg-loopback">LoopBack</a>
                                     <a href="#" id="skill-svg-java">Java</a>
+                                    <a href="#" id="skill-svg-java">UML</a>
                                 </div>
                             </object>
                         </div>
@@ -99,7 +114,7 @@
                                 <h3>Langues</h3>
                                 <div class="div-languages">
                                     <img src="images/language/Flag_of_France.svg" alt="Français" title="Français">
-                                    <span>
+                                    <span title="Bilingue ou langue natale">
                                         <i class="fa fa-star fa-2x"></i>
                                         <i class="fa fa-star fa-2x"></i>
                                         <i class="fa fa-star fa-2x"></i>
@@ -109,7 +124,7 @@
                                 </div>
                                 <div class="div-languages">
                                     <img src="images/language/Flag_of_the_United_Kingdom.svg" alt="Anglais" title="Anglais">
-                                    <span>
+                                    <span title="Compétence professionnelle">
                                         <i class="fa fa-star fa-2x"></i>
                                         <i class="fa fa-star fa-2x"></i>
                                         <i class="fa fa-star fa-2x"></i>
@@ -119,7 +134,7 @@
                                 </div>
                                 <div class="div-languages">
                                     <img src="images/language/Flag_of_Spain.svg" alt="Espagnol" title="Espagnol">
-                                    <span>
+                                    <span title="Notions élémentaires">
                                         <i class="fa fa-star fa-2x"></i>
                                         <i class="fa fa-star-o fa-2x"></i>
                                         <i class="fa fa-star-o fa-2x"></i>
@@ -161,8 +176,9 @@
                                     <h5><small>2014 - 2016</small></h5>
                                 </div>
                                 <p class="mb-1">
-                                     Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable),
+                                     STI2D (Sciences et Technologies de l'Industrie et du Développement Durable),
                                      spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest.
+                                     Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20.
                                 </p>
                             </li>
                         </ul>
@@ -221,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <figure id="figure-printable">
+        <figure id="figure-printable" class="d-none d-print-block">
             <img src="index.png">
         </figure>
     </body>
