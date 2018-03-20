@@ -10,6 +10,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css" media="screen">
+        <script src="js/html.js"></script>
+        <script src="js/promise-ajax.js"></script>
         <script src="js/i18n.js"></script>
     </head>
     <body>
@@ -23,7 +25,7 @@
                         <div>
                             <p id="p-name">
                                 Loïc Penaud
-                                <br>19 <span data-text="years-old"></span>
+                                <br>20 <span data-text="years-old"></span>
                             </p>
                             <div class="list-group text-left" id="div-personal">
                                 <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank" style="color: #0051ff">
@@ -51,37 +53,7 @@
                 <div id="div-col-center" class="col-md-9">
                     <div>
                         <h2 id="h2-professional-experience" data-text="professional-experience"></h2>
-                        <ul class="list-group">
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Shakabay (Brest)</h5>
-                                    <h5><small>15/01/2018 - 02/03/2018</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai
-                                  travaillé sur l'API de Shakabay en nodejs avec koa-router.
-                                </p>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Zip (Guipavas)</h5>
-                                    <h5><small>03/07/2017 - 18/08/2017</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2).
-                                  De plus, j'ai contribué au front avec angularjs.
-                                </p>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Zip (Guipavas)</h5>
-                                    <h5><small>29/05/2017 - 23/06/2017</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)
-                                </p>
-                            </li>
-                        </ul>
+                        <ul id="ul-professional-experience" class="list-group"></ul>
                     </div>
                     <div>
                         <h2 data-text="skills"></h2>
@@ -113,36 +85,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h3 data-text="languages"></h3>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_France.svg" alt="Français" title="Français">
-                                    <span title="Bilingue ou langue natale">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_the_United_Kingdom.svg" alt="Anglais" title="Anglais">
-                                    <span title="Compétence professionnelle">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_Spain.svg" alt="Espagnol" title="Espagnol">
-                                    <span title="Notions élémentaires">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                    </span>
-                                </div>
+                                <div id="div-parent-languages"></div>
                             </div>
                             <div id="div-diverse" class="col-md-6">
                                 <h3 data-text="various">Divers</h3>

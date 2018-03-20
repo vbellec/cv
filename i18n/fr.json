@@ -1,11 +1,66 @@
 {
-  "years-old": "age",
-  "print": "imprimer",
-  "professional-experience": "expérience professionnelle",
-  "skills": "compétences",
-  "computer-science": "informatiques",
-  "languages": "langues",
-  "various": "divers",
-  "education": "formation",
-  "hobbies": "hobbies"
+  "language": "fr",
+  "values": {
+    "years-old": "ans",
+    "print": "imprimer",
+    "professional-experience": "expérience professionnelle",
+    "skills": "compétences",
+    "computer-science": "informatiques",
+    "languages": "langues",
+    "various": "divers",
+    "education": "formation",
+    "hobbies": "centre d'intérêt"
+  },
+  "proExp": [
+    {
+      "title": "Shakabay (Brest)",
+      "dates": {
+        "start": "15/01/2018",
+        "end": "02/03/2018"
+      },
+      "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, p1endant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
+    },
+    {
+      "title": "Zip (Guipavas)",
+      "dates": {
+        "start": "03/07/2017",
+        "end": "18/08/2017"
+      },
+      "description": "Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2). De plus, j'ai contribué au front avec angularjs."
+    },
+    {
+      "title": "Zip (Guipavas)",
+      "dates": {
+        "start": "29/05/2017",
+        "end": "23/06/2017"
+      },
+      "description": "Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)."
+    }
+  ],
+  "languages": {
+    "levels": [
+      "notions élémentaires",
+      "compétence professionnelle limitée",
+      "compétence professionnelle",
+      "compétence professionnelle complète",
+      "bilingue ou langue natale"
+    ],
+    "skills": [
+      {
+        "image": "images/language/Flag_of_France.svg",
+        "language": "Français",
+        "level": 4
+      },
+      {
+        "image": "images/language/Flag_of_the_United_Kingdom.svg",
+        "language": "Anglais",
+        "level": 2
+      },
+      {
+        "image": "images/language/Flag_of_Spain.svg",
+        "language": "Espagnol",
+        "level": 0
+      }
+    ]
+  }
 }

@@ -1,3 +1,7 @@
 window.onload = () => {
-  translateAllDataText('de');
+  const language = getLanguage();
+  translateAllDataText(language).then(() => {
+    translateProExp(language);
+    translateLanguage(language);
+  });
 }
