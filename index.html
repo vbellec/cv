@@ -10,6 +10,9 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css" media="screen">
+        <script src="js/html.js"></script>
+        <script src="js/promise-ajax.js"></script>
+        <script src="js/i18n.js"></script>
     </head>
     <body>
         <div class="container-fluid d-print-none">
@@ -22,7 +25,7 @@
                         <div>
                             <p id="p-name">
                                 Loïc Penaud
-                                <br> 19 ans
+                                <br>20 <span data-text="years-old"></span>
                             </p>
                             <div class="list-group text-left" id="div-personal">
                                 <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank" style="color: #0051ff">
@@ -38,9 +41,13 @@
                                     <i class="fa fa-linkedin-square fa-2x"></i>
                                     <span>Loïc Penaud</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="index.pdf" target="_blank">
+                                <a id="a-print" class="list-group-item list-group-item-action" href="index.pdf" target="_blank">
                                     <i class="fa fa-print fa-2x"></i>
-                                    <span>Imprimer</span>
+                                    <span style="text-transform: capitalize" data-text="print"></span>
+                                </a>
+                                <a class="list-group-item list-group-item-action">
+                                    <i class="fa fa-language fa-2x"></i>
+                                    <select id="select-languages" class="selectpicker"></select>
                                 </a>
                             </div>
                         </div>
@@ -49,42 +56,12 @@
 
                 <div id="div-col-center" class="col-md-9">
                     <div>
-                        <h2 id="h2-professional-experience">Expérience professionnelle</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Shakabay (Brest)</h5>
-                                    <h5><small>15/01/2018 - 02/03/2018</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai
-                                  travaillé sur l'API de Shakabay en nodejs avec koa-router.
-                                </p>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Zip (Guipavas)</h5>
-                                    <h5><small>03/07/2017 - 18/08/2017</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2).
-                                  De plus, j'ai contribué au front avec angularjs.
-                                </p>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Zip (Guipavas)</h5>
-                                    <h5><small>29/05/2017 - 23/06/2017</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                  Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)
-                                </p>
-                            </li>
-                        </ul>
+                        <h2 id="h2-professional-experience" data-text="professional-experience"></h2>
+                        <ul id="ul-professional-experience" class="list-group"></ul>
                     </div>
                     <div>
-                        <h2>Compétences</h2>
-                        <h3>Informatiques</h3>
+                        <h2 data-text="skills"></h2>
+                        <h3 data-text="computer-science"></h3>
                         <div class="text-center">
                             <object data="images/skill.svg" type="image/svg+xml" id="object-skill" width="500px">
                                 <div id="div-svg-fallback">
@@ -111,134 +88,29 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <h3>Langues</h3>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_France.svg" alt="Français" title="Français">
-                                    <span title="Bilingue ou langue natale">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_the_United_Kingdom.svg" alt="Anglais" title="Anglais">
-                                    <span title="Compétence professionnelle">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                    </span>
-                                </div>
-                                <div class="div-languages">
-                                    <img src="images/language/Flag_of_Spain.svg" alt="Espagnol" title="Espagnol">
-                                    <span title="Notions élémentaires">
-                                        <i class="fa fa-star fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                        <i class="fa fa-star-o fa-2x"></i>
-                                    </span>
-                                </div>
+                                <h3 data-text="languages"></h3>
+                                <div id="div-parent-languages"></div>
                             </div>
-                            <div id="div-diverse" class="col-md-6">
-                                <h3>Divers</h3>
-                                <p>
-                                    Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...
-                                </p>
-                                <p>
-                                    Prévention et secours civiques de niveau 1,
-                                    certificat de compétence obtenu en 2013
-                                    suite à un stage au collège.
-                                </p>
+                            <div id="div-various" class="col-md-6">
+                                <h3 data-text="various">Divers</h3>
+                                <div id="div-sub-various"></div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h2>Formation</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">BTS - SIO</h5>
-                                    <h5><small>2016 - aujourd'hui</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                     BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations),
-                                     spécialité SLAM (Solutions Logicielles
-                                     et Applications Métier) au lycée Charles de Foucault à Brest.
-                                </p>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">STI2D</h5>
-                                    <h5><small>2014 - 2016</small></h5>
-                                </div>
-                                <p class="mb-1">
-                                     STI2D (Sciences et Technologies de l'Industrie et du Développement Durable),
-                                     spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest.
-                                     Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20.
-                                </p>
-                            </li>
-                        </ul>
+                        <h2 data-text="education"></h2>
+                        <ul id="ul-education" class="list-group"></ul>
                     </div>
                     <div id="div-interest">
-                        <h2>Centre d'intérêt</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Arts</h5>
-                                </div>
-                                <ul class="mb-1">
-                                    <li>Musique (festival, concerts)</li>
-                                    <li>Cinéma</li>
-                                    <li>Télévision (séries)</li>
-                                    <li>Bande-Dessiné</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Kayak</h5>
-                                </div>
-                                <ul class="mb-1">
-                                    <li>Club de Brest (CKB)</li>
-                                    <li>Compétitions nationales (2013 à 2016)</li>
-                                    <li>Encadrement de jeunes</li>
-                                    <li>Centre Labellisé d'Entraînement (2013-2015)</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Jeux-vidéo</h5>
-                                </div>
-                                <ul class="mb-1">
-                                    <li>Jeu de rôle (RPG)</li>
-                                    <li>Stratégie (RTS, TBS)</li>
-                                    <li>Gestion</li>
-                                    <li>Jeux de tir (FPS, TPS)</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Vidéo</h5>
-                                </div>
-                                <ul class="mb-1">
-                                    <li>Notion de montage</li>
-                                    <li>Élaboration de plusieurs court-métrage en groupe</li>
-                                    <li>
-                                        Nomination pour le festival « Travelling Pocket » organisé par l’association « Clair Obscur » et disponible sur
-                                        <a href="https://www.youtube.com/watch?v=PdAkVcdvGCs" target="_blank">YouTube</a>.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h2 data-text="hobbies"></h2>
+                        <ul id="ul-interest" class="list-group"></ul>
                     </div>
                 </div>
             </div>
         </div>
         <figure id="figure-printable" class="d-none d-print-block">
-            <img src="index.png">
+            <img id="img-print" src="index.png">
         </figure>
+        <script src="js/index.js"></script>
     </body>
 </html>
