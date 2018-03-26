@@ -72,9 +72,21 @@ const translateLanguage = function (language) {
     getTranslation(language)
       .then(translation => {
         const { languages } = translation;
-        console.log(languages)
         for (let i = 0; i < languages.skills.length; i++) {
           div.appendChild(createDivLanguage(languages.levels, languages.skills[i]));
+        }
+      });
+  });
+}
+
+const translateEducation = function (language) {
+  return new Promise(resolve => {
+    const ul = document.querySelector('#ul-education');
+    getTranslation(language)
+      .then(translation => {
+        const { education } = translation;
+        for (let i = 0; i < education.length; i++) {
+          ul.appendChild(createLiEducation(education[i]));
         }
       });
   });

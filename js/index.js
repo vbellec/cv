@@ -3,5 +3,6 @@ window.onload = () => {
   translateAllDataText(language).then(() => {
     translateProExp(language);
     translateLanguage(language);
+    translateEducation(language);
   });
 }

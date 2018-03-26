@@ -50,7 +50,7 @@ const createListGroupItemProExp = function ({
 
   smallDate.textContent = dates.start + ' - ' + dates.end;
 
-  p.textContent = description;
+  p.innerHTML = description;
   setClassList(p, ['mb-1']);
 
   return li;
@@ -82,3 +82,41 @@ const createDivLanguage = function (levels, skill) {
   return div;
 }
 
+const createLiEducation = function ({
+  title,
+  dates,
+  description
+}) {
+  const li = document.createElement('LI');
+  const div = document.createElement('DIV');
+  const h5Title = document.createElement('H5');
+  const h5Date = document.createElement('H5');
+  const smallDate = document.createElement('SMALL');
+  const p = document.createElement('p');
+
+  setClassList(li, [
+    'list-group-item',
+    'flex-column',
+    'align-items-start'
+  ]);
+  li.appendChild(div);
+  li.appendChild(p)
+
+  setClassList(div, [
+    'd-flex',
+    'w-100',
+    'justify-content-between'
+  ]);
+  div.appendChild(h5Title);
+  div.appendChild(h5Date);
+
+  setClassList(h5Title, ['mb-1']);
+  h5Title.textContent = title;
+
+  h5Date.appendChild(smallDate);
+  smallDate.textContent = dates.start + ' - ' + dates.end;
+
+  p.innerHTML = description;
+
+  return li;
+}
