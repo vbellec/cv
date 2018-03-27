@@ -4,5 +4,7 @@ window.onload = () => {
     translateProExp(language);
     translateLanguage(language);
     translateEducation(language);
+    translateInterest(language);
+    translateVarious(language);
   });
 }

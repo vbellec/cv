@@ -120,3 +120,40 @@ const createLiEducation = function ({
 
   return li;
 }
+
+const createLiInterest = function ({
+  title,
+  list
+}) {
+  const li = document.createElement('LI');
+  const div = document.createElement('DIV');
+  const h5 = document.createElement('H5');
+  const ul = document.createElement('UL');
+  
+  setClassList(li, [
+    'list-group-item',
+    'flex-column',
+    'align-items-start'
+  ]);
+  li.appendChild(div);
+  li.appendChild(ul);
+
+  setClassList(div, [
+    'd-flex',
+    'w-100',
+    'justify-content-between'
+  ]);
+  div.appendChild(h5);
+
+  setClassList(h5, ['mb-1']);
+  h5.textContent = title;
+
+  setClassList(ul, ['mb-1']);
+  for (let i = 0; i < list.length; i++) {
+    const subLi = document.createElement('LI');
+    subLi.innerHTML = list[i];
+    ul.appendChild(subLi);
+  }
+
+  return li;
+}

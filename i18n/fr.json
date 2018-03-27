@@ -80,5 +80,46 @@
       },
       "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20."
     }
+  ],
+  "interest": [
+    {
+      "title": "Arts",
+      "list": [
+        "Musique (festival, concerts)",
+        "Cinéma",
+        "Télévision (séries)",
+        "Bande-Dessiné"
+      ]
+    },
+    {
+      "title": "Kayak",
+      "list": [
+        "Club de Brest (CKB)",
+        "Compétitions nationales (2013 à 2016)",
+        "Encadrement de jeunes",
+        "Centre Labellisé d'Entraînement (2013-2015)"
+      ]
+    },
+    {
+      "title": "Jeux-vidéo",
+      "list": [
+        "Jeu de rôle (RPG)",
+        "Statégie (RTS, TBS)",
+        "Gestion",
+        "Jeux de tir (FPS, TPS)"
+      ]
+    },
+    {
+      "title": "Vidéo",
+      "list": [
+        "Notions de montage",
+        "Élaboration de plusieurs court-métrage en groupe",
+        "Nomination pour le festival « Travelling Pocket » organisé par l’association « Clair Obscur » et disponible sur <a href=\"https://www.youtube.com/watch?v=PdAkVcdvGCs\" target=\"_blank\">YouTube</a>."
+      ]
+    }
+  ],
+  "various": [
+    "Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...",
+    "Prévention et secours civiques de niveau 1, certificat de compétence obtenu en 2013 suite à un stage au collège."
   ]
 }

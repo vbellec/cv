@@ -75,6 +75,7 @@ const translateLanguage = function (language) {
         for (let i = 0; i < languages.skills.length; i++) {
           div.appendChild(createDivLanguage(languages.levels, languages.skills[i]));
         }
+        resolve();
       });
   });
 }
@@ -88,6 +89,33 @@ const translateEducation = function (language) {
         for (let i = 0; i < education.length; i++) {
           ul.appendChild(createLiEducation(education[i]));
         }
+        resolve();
       });
   });
+}
+
+const translateInterest = function (language) {
+  return new Promise(resolve => {
+    const ul = document.querySelector('#ul-interest');
+    getTranslation(language)
+      .then(translation => {
+        const { interest } = translation;
+        for (let i = 0; i < interest.length; i++) {
+          ul.appendChild(createLiInterest(interest[i]));
+        }
+      });
+  });
+}
+
+const translateVarious = function (language) {
+  const div = document.querySelector('#div-sub-various');
+  getTranslation(language)
+    .then(translation => {
+      const { various } = translation;
+      for (let i = 0; i < various.length; i++) {
+        const p = document.createElement('P');
+        p.innerHTML = various[i];
+        div.appendChild(p);
+      }
+    });
 }
