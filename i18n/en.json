@@ -10,5 +10,140 @@
     "various": "other skills",
     "education": "education",
     "hobbies": "hobbies"
-  }
+  },
+  "proExp": [
+    {
+      "title": "Shakabay (Brest Area, France)",
+      "dates": {
+        "start": {
+          "day": 15,
+          "month": 1,
+          "year": 2018
+        },
+        "end": {
+          "day": 2,
+          "mouth": 3,
+          "year": 2018 
+        }
+      },
+      "description": "Internship for my second graduate student year. I worked on the Shakabay API (back-end) in nodejs with koa-router."
+    },
+    {
+      "title": "Zip (Guipavas, France)",
+      "dates": {
+        "start": {
+          "day": 3,
+          "month": 7,
+          "year": 2017
+        },
+        "end": {
+          "day": 18,
+          "mouth": 8,
+          "year": 2017
+        }
+      },
+      "description": "Holiday job, where I worked on Air Affaires API with loopback (v2) a nodejs framework, in addition I contributed to the front with angularjs."
+    },
+    {
+      "title": "Zip (Guipavas, France)",
+      "dates": {
+        "start": {
+          "day": 29,
+          "month": 5,
+          "year": 2017
+        },
+        "end": {
+          "day": 23,
+          "mouth": 6,
+          "year": 2017
+        }
+      },
+      "description": "Work experience of the first graduate student year."
+    }
+  ],
+  "languages": {
+    "levels": [
+      "elementary proficiency",
+      "limited working proficiency",
+      "professional working proficiency",
+      "full professional proficiency",
+      "native or bilingual proficiency"
+    ],
+    "skills": [
+      {
+        "image": "images/language/Flag_of_France.svg",
+        "language": "French",
+        "level": 4
+      },
+      {
+        "image": "images/language/Flag_of_the_United_Kingdom.svg",
+        "language": "English",
+        "level": 2
+      },
+      {
+        "image": "images/language/Flag_of_Spain.svg",
+        "language": "Spanish",
+        "level": 0
+      }
+    ]
+  },
+  "education": [
+    {
+      "title": "BTS - SIO",
+      "dates": {
+        "start": "2016",
+        "end": "today"
+      },
+      "description": "BTS (Higher Technician Certificate) SIO (IT Services to Organizations), specialty SLAM (Software Solutions and Business Applications) at the Lycée Charles de Foucault in Brest."
+    },
+    {
+      "title": "STI2D",
+      "dates": {
+        "start": "2014",
+        "end": "2016"
+      },
+      "description": "STI2D baccalaureate diploma, \"pretty good\" awarded."
+    }
+  ],
+  "interest": [
+    {
+      "title": "Arts",
+      "list": [
+        "Music (festivals, concerts)",
+        "Cinema",
+        "Television (series)",
+        "Comic strip"
+      ]
+    },
+    {
+      "title": "Kayak",
+      "list": [
+        "Brest club (CKB)",
+        "Nationals tournaments (2013 to 2016)",
+        "Youth coaching",
+        "Labeling Center of Training (CLE) (2013-2015)"
+      ]
+    },
+    {
+      "title": "Video-games",
+      "list": [
+        "Role playing games (RPG)",
+        "Strategy (RTS, TBS)",
+        "Management",
+        "Shot games (FPS, TPS)"
+      ]
+    },
+    {
+      "title": "Video",
+      "list": [
+        "Notions of editing",
+        "Elaboration of several short films in a group",
+        "Nomination for the festival \"Traveling Pocket\" organized by the association \"Clair Obscur\" and available on <a href=\"https://www.youtube.com/watch?v=PdAkVcdvGCs\" target=\"_blank\">YouTube</a>."
+      ]
+    }
+  ],
+  "various": [
+    "Good knowledge of office suites like LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...",
+    "Level 1 Prevention and Civic Education Assistance Certificate of Qualification issued in 2013 at the secondary."
+  ]
 }

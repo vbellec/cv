@@ -1,16 +1,45 @@
 const translations = [];
 
+const availableLanguages = [
+  {
+    value: 'en',
+    text: 'English',
+  },
+  {
+    value: 'fr',
+    text: 'Français',
+  },
+];
+
 const getLanguage = function () {
   return navigator.language.split('-')[0];
 };
 
 const getTranslation = function (language) {
   return new Promise((resolve, reject) => {
+    if (availableLanguages.findIndex(lang => lang.value === language) === -1) language = 'en';
     const index = translations.findIndex(translation => translation.language === language);
 
     if (index === -1) {
       ajaxGetJSONPromise(window.location + 'i18n/' + language + '.json')
         .then(translation => {
+          console.log(translation.proExp);
+          for (let i = 0; i < translation.proExp.length; i++) {
+            const { dates } = translation.proExp[i];
+            const { start, end } = dates;
+
+            translation.proExp[i].dates.start = (new Date(
+              start.year, 
+              start.month - 1, 
+              start.day
+            )).toLocaleDateString(language);
+  
+            translation.proExp[i].dates.end = (new Date(
+              end.year,
+              end.mouth - 1,
+              end.day
+            )).toLocaleDateString(language);
+          }
           translations.push(translation);
           resolve(translation);
         })
@@ -55,6 +84,7 @@ const translateAllDataText = function (language) {
 const translateProExp = function translateProfessionalExperience (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-professional-experience');
+    removeAllChild(ul);
     getTranslation(language)
       .then(translation => {
         const { proExp } = translation;
@@ -69,6 +99,7 @@ const translateProExp = function translateProfessionalExperience (language) {
 const translateLanguage = function (language) {
   return new Promise(resolve => {
     const div = document.querySelector('#div-parent-languages');
+    removeAllChild(div);
     getTranslation(language)
       .then(translation => {
         const { languages } = translation;
@@ -83,6 +114,7 @@ const translateLanguage = function (language) {
 const translateEducation = function (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-education');
+    removeAllChild(ul);
     getTranslation(language)
       .then(translation => {
         const { education } = translation;
@@ -97,6 +129,7 @@ const translateEducation = function (language) {
 const translateInterest = function (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-interest');
+    removeAllChild(ul);
     getTranslation(language)
       .then(translation => {
         const { interest } = translation;
@@ -108,14 +141,31 @@ const translateInterest = function (language) {
 }
 
 const translateVarious = function (language) {
-  const div = document.querySelector('#div-sub-various');
-  getTranslation(language)
-    .then(translation => {
-      const { various } = translation;
-      for (let i = 0; i < various.length; i++) {
-        const p = document.createElement('P');
-        p.innerHTML = various[i];
-        div.appendChild(p);
-      }
+  return new Promise(resolve => {
+    const div = document.querySelector('#div-sub-various');
+    removeAllChild(div);
+    getTranslation(language)
+      .then(translation => {
+        const { various } = translation;
+        for (let i = 0; i < various.length; i++) {
+          const p = document.createElement('P');
+          p.innerHTML = various[i];
+          div.appendChild(p);
+        }
+        resolve();
+      });
+  })
+}
+
+const translateAll = function (language) {
+  return new Promise(resolve => {
+    translateAllDataText(language).then(() => {
+      translateProExp(language);
+      translateLanguage(language);
+      translateEducation(language);
+      translateInterest(language);
+      translateVarious(language);
+      resolve(language);
     });
+  });
 }

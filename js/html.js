@@ -157,3 +157,9 @@ const createLiInterest = function ({
 
   return li;
 }
+
+const removeAllChild = function (DOMElement) {
+  while (DOMElement.hasChildNodes()) {
+    DOMElement.removeChild(DOMElement.firstChild);
+  }
+}
