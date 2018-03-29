@@ -13,7 +13,6 @@ const ajaxGetPromise = function (url) {
       }
     };
     xhr.onerror = () => {
-      console.log()
       reject({
         status: xhr.status,
         statusText: xhr.statusText

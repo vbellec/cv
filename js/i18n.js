@@ -23,7 +23,6 @@ const getTranslation = function (language) {
     if (index === -1) {
       ajaxGetJSONPromise(window.location + 'i18n/' + language + '.json')
         .then(translation => {
-          console.log(translation.proExp);
           for (let i = 0; i < translation.proExp.length; i++) {
             const { dates } = translation.proExp[i];
             const { start, end } = dates;
@@ -157,6 +156,19 @@ const translateVarious = function (language) {
   })
 }
 
+const translatePrint = function (language) {
+  return new Promise(resolve => {
+    getTranslation(language)
+      .then(translation => {
+        const a = document.querySelector('#a-print');
+        const img = document.querySelector('#img-print');
+        a.href = `documents/${translation.language}.pdf`;
+        img.src = `images/index/${translation.language}.png`;
+        resolve();
+      })
+  })
+}
+
 const translateAll = function (language) {
   return new Promise(resolve => {
     translateAllDataText(language).then(() => {
@@ -165,6 +177,7 @@ const translateAll = function (language) {
       translateEducation(language);
       translateInterest(language);
       translateVarious(language);
+      translatePrint(language);
       resolve(language);
     });
   });
