@@ -1,4 +1,7 @@
 window.onload = function () {
+  const bornDate = new Date(1998, 2, 23);
+  const dateDiff = Date.now() - bornDate.getTime();
+
   translateAll(getLanguage()).then(language => {
     const selectLanguages = this.document.querySelector('#select-languages');
     let optionLanguages = availableLanguages.filter(lang => lang.value !== language);
@@ -10,8 +13,10 @@ window.onload = function () {
       selectLanguages.appendChild(opt);
     }
 
-    selectLanguages.addEventListener('change', (evt) => {
+    selectLanguages.addEventListener('change', evt => {
       translateAll(evt.target.value);
     });
   });
+
+  this.document.querySelector('#span-years-old').textContent = (new Date(dateDiff)).getUTCFullYear() - 1970;
 }
