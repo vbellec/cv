@@ -9,7 +9,8 @@
     "languages": "langues",
     "various": "divers",
     "education": "formation",
-    "hobbies": "centre d'intérêt"
+    "hobbies": "centre d'intérêt",
+    "page-title": "CV - Loïc Penaud"
   },
   "proExp": [
     {
@@ -23,7 +24,7 @@
         "end": {
           "day": 2,
           "mouth": 3,
-          "year": 2018 
+          "year": 2018
         }
       },
       "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
