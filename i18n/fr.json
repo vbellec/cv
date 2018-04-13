@@ -10,11 +10,11 @@
     "various": "divers",
     "education": "formation",
     "hobbies": "centre d'intérêt",
-    "page-title": "CV - Loïc Penaud"
+    "page-title": "CV - Vincent Bellec"
   },
   "proExp": [
     {
-      "title": "Shakabay (Brest)",
+      "title": "Koust (Breles, 29810)",
       "dates": {
         "start": {
           "day": 15,
@@ -27,26 +27,11 @@
           "year": 2018
         }
       },
-      "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
+      "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur Apex, JarperReport et base de données Oracle."
     },
+   
     {
-      "title": "Zip (Guipavas)",
-      "dates": {
-        "start": {
-          "day": 3,
-          "month": 7,
-          "year": 2017
-        },
-        "end": {
-          "day": 18,
-          "mouth": 8,
-          "year": 2017
-        }
-      },
-      "description": "Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2). De plus, j'ai contribué au front avec angularjs."
-    },
-    {
-      "title": "Zip (Guipavas)",
+      "title": "Koust (Breles, 29810)",
       "dates": {
         "start": {
           "day": 29,
@@ -59,7 +44,7 @@
           "year": 2017
         }
       },
-      "description": "Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)."
+      "description": "Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations), j'ai travaillé sur l'API de Stripe."
     }
   ],
   "languages": {
@@ -79,12 +64,12 @@
       {
         "image": "images/language/Flag_of_the_United_Kingdom.svg",
         "language": "Anglais",
-        "level": 2
+        "level": 1
       },
       {
         "image": "images/language/Flag_of_Spain.svg",
         "language": "Espagnol",
-        "level": 0
+        "level": 1
       }
     ]
   },
@@ -98,53 +83,48 @@
       "description": "BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), spécialité SLAM (Solutions Logicielles et Applications Métier) au lycée Charles de Foucault à Brest."
     },
     {
-      "title": "STI2D",
+      "title": "STMG",
       "dates": {
         "start": "2014",
         "end": "2016"
       },
-      "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20."
+      "description": "STMG (Sciences et Technologies du Management et de la Gestion), spécialité GF (Gestion Finance) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20."
     }
   ],
   "interest": [
     {
       "title": "Arts",
       "list": [
-        "Musique (festivals, concerts)",
         "Cinéma",
-        "Télévision (séries)",
-        "Bande-Dessiné"
-      ]
+        "Télévision (séries)"
+       ]
     },
     {
-      "title": "Kayak",
+      "title": "Sport",
       "list": [
-        "Club de Brest (CKB)",
-        "Compétitions nationales (2013 à 2016)",
-        "Encadrement de jeunes",
-        "Centre Labellisé d'Entraînement (CLE) (2013-2015)"
+        "Pratique de l'athlétisme (Plouzané Atlhétic Club (PAC-MAC) - 2013 à 2014)",
+        "Pratique du football (Assosiation Sportive Ludres - 2009 à 2011 et au club de Plouzané AC - 2012 à 2013)",
+        "Pratique du VTT (à Ludres 2011 à 2012)"
       ]
     },
     {
       "title": "Jeux-vidéo",
       "list": [
         "Jeu de rôle (RPG)",
-        "Statégie (RTS, TBS)",
-        "Gestion",
-        "Jeux de tir (FPS, TPS)"
+        "Jeux de tir (FPS, TPS)",
+        "Jeux de sport"
       ]
     },
     {
       "title": "Vidéo",
       "list": [
-        "Notions de montage",
-        "Élaboration de plusieurs court-métrage en groupe",
-        "Nomination pour le festival « Travelling Pocket » organisé par l’association « Clair Obscur » et disponible sur <a href=\"https://www.youtube.com/watch?v=PdAkVcdvGCs\" target=\"_blank\">YouTube</a>."
+        "Notions de montage"
       ]
     }
   ],
   "various": [
-    "Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, OnlyOffice, Google Drive...",
-    "Prévention et secours civiques de niveau 1, certificat de compétence obtenu en 2013 suite à un stage au collège."
+    "<strong>Permis B et véhiculé</strong>.",
+    "Bonne connaissance des suites bureautiques comme LibreOffice, OpenOffice, Microsoft Office, Google Drive...",
+    "Prévention et secours civiques de niveau 1, certificat de compétence obtenu en 2012 suite à un stage au collège."
   ]
 }
